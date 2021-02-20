@@ -1,0 +1,109 @@
+@media only screen and (min-width: 1280px) {
+	@each $size, $length in $sizes {
+		.w-xl-#{$size} {
+			width: $length !important;
+		}
+		.h-xl-#{$size} {
+			height: $length !important;
+		}
+		.min-h-xl-#{$size} {
+			min-height: $length;
+		}
+		.max-h-xl-#{$size} {
+			max-height: $length;
+		}
+		.min-w-xl-#{$size} {
+			min-width: $length;
+		}
+		.max-w-xl-#{$size} {
+			max-width: $length;
+		}
+	}
+	@each $name, $value in $line-heights {
+		.leading-xl-#{$name} {
+			line-height: $value;
+		}
+	}
+	@each $size, $value in $font-sizes {
+		.fz-xl-#{$size} {
+			font-size: $value !important;
+		}
+	}
+
+	@each $name, $value in $rounded {
+		.rounded-xl-#{$name} {
+			border-radius: $value;
+		}
+		.rounded-xl-top-#{$name} {
+			border-top-left-radius: $value;
+			border-top-right-radius: $value;
+		}
+		.rounded-xl-bottom-#{$name} {
+			border-bottom-left-radius: $value;
+			border-bottom-right-radius: $value;
+		}
+		.rounded-xl-top-left-#{$name} {
+			border-top-left-radius: $value;
+		}
+		.rounded-xl-top-right-#{$name} {
+			border-top-right-radius: $value;
+		}
+		.rounded-xl-bottom-right-#{$name} {
+			border-bottom-right-radius: $value;
+		}
+		.rounded-xl-bottom-left-#{$name} {
+			border-bottom-left-radius: $value;
+		}
+	}
+	@each $name, $value in $spacers{
+		.top-xl-#{$name} {
+			top: $value;
+		}
+		.top-xl-n#{$name} {
+			top: $value * -1 !important;
+		}
+		.bottom-xl-#{$name} {
+			bottom: $value;
+		}
+		.bottom-xl-n#{$name} {
+			bottom: $value * -1;
+		}
+		.right-xl-#{$name} {
+			right: $value;
+		}
+		.right-xl-n#{$name} {
+			right: $value * -1;
+		}
+		.left-xl-#{$name} {
+			left: $value;
+		}
+		.left-xl-n#{$name} {
+			left: $value * -1;
+		}
+	}
+	@each $name, $value in $rounded {
+		.rounded-xl-#{$name} {
+			border-radius: $value !important;
+		}
+		.rounded-xl-top-#{$name} {
+			border-top-left-radius: $value;
+			border-top-right-radius: $value;
+		}
+		.rounded-xl-bottom-#{$name} {
+			border-bottom-left-radius: $value;
+			border-bottom-right-radius: $value;
+		}
+		.rounded-xl-top-left-#{$name} {
+			border-top-left-radius: $value;
+		}
+		.rounded-xl-top-right-#{$name} {
+			border-top-right-radius: $value;
+		}
+		.rounded-xl-bottom-right-#{$name} {
+			border-bottom-right-radius: $value;
+		}
+		.rounded-xl-bottom-left-#{$name} {
+			border-bottom-left-radius: $value;
+		}
+	}
+}
